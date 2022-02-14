@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(66, 144, 47);    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container{
+    width: 600px;
+    border-radius: 30px;
+    margin: 35px auto;
+    padding: 25px;
+    background: rgb(255, 255, 255, 0.5);
+}
+
+.container h1{
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 35px;
+    word-spacing: 15px;
+    font-size: 40pt;
+    color: rgb(52, 117, 36);
+}
+
+.caixa{
+    margin: 20px 15px;
+}
+
+.container label.informe{
+    display: block;
+    margin: 30px 20px;
+    font-size: 18pt;
+}
+
+.container label{
+    font-size: 14pt;
+}
+
+.container input{
+    font-size: 25px;
+    margin: 0 10px 0 40px;
+    text-indent: 10px;
+}
+
+#left{
+    float: left;
+    margin-left: 40px;
+}
+#right{
+    float: right;
+    line-height: 300px;
+    margin-right: 40px;
+}
+
+#right input{
+    padding: 20px;
+}
+
+#resultado{
+    text-align: center;
+}
+
+#resultado img{
+    border-radius: 150px;
+}

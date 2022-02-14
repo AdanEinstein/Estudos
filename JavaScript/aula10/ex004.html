@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: linear-gradient(to right, rgb(26, 41, 128), rgb(38, 208, 206));
+        }
+        #container{
+            background: rgba(195, 193, 193, 0.76);
+            border-radius: 2em;
+            width: 600px;
+            margin: 50px auto;
+            padding: 15px;
+            font: normal 18pt 'Trebuchet MS';
+            text-align: center;
+        }
+        #container>h1{
+            color: rgb(5, 107, 167);
+            border-bottom: 3px solid rgb(5, 107, 167);
+        }
+        label{
+            display: block;
+            margin: 20px;
+            color: white;
+        }
+        label>input{
+            font: normal 18pt 'Trebuchet MS';
+            border-radius: 10px;
+            text-indent: 10px;
+        }
+        .operacao{
+            width: 100px;
+            height: 50px;
+            font-size: 15pt;
+            border-radius: 10px;
+            background-color: rgb(5, 107, 167);
+            color: white;            
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Calculadora</h1>
+        <label for="num1">Valor 1:
+            <input type="text" name="num1" id="num1">
+        </label>
+        <label for="num2">Valor 2:
+            <input type="text" name="num2" id="num2">
+        </label>
+        <input class="operacao" type="button" value="+">
+        <input class="operacao" type="button" value="-">
+        <input class="operacao" type="button" value="&times;">
+        <input class="operacao" type="button" value="&divide;">
+        <label for="res">Resultado:
+            <input type="text" name="res" id="res" disabled>
+        </label>
+    </div>
+    <script>
+        var num1 = window.document.getElementById('num1')
+        var num2 = window.document.getElementById('num2')
+        var resultado = window.document.getElementById('res')
+        var soma = document.getElementsByClassName('operacao')[0]
+        soma.addEventListener('click', somar)
+        var subtracao = document.getElementsByClassName('operacao')[1]
+        subtracao.addEventListener('click', subtrair)
+        var multiplicacao = document.getElementsByClassName('operacao')[2]
+        multiplicacao.addEventListener('click', multiplicar)
+        var divisao = document.getElementsByClassName('operacao')[3]
+        divisao.addEventListener('click', dividir)
+        
+        function somar(){
+            var n1 = Number(num1.value)
+            var n2 = Number(num2.value)
+            var res = n1 + n2
+            resultado.value = res
+        }
+        function subtrair(){
+            var n1 = Number(num1.value)
+            var n2 = Number(num2.value)
+            var res = n1 - n2
+            resultado.value = res
+        }
+        function multiplicar(){
+            var n1 = Number(num1.value)
+            var n2 = Number(num2.value)
+            var res = n1 * n2
+            resultado.value = res
+        }
+        function dividir(){
+            var n1 = Number(num1.value)
+            var n2 = Number(num2.value)
+            var res = n1 / n2
+            resultado.value = res
+        }        
+    </script>
+</body>
+</html>

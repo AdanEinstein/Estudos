@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade e Sexo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Idade e Sexo</h1>
+        <div id="left">
+            <label for="idade" class="informe">Informe a idade:</label>
+            <input type="number" min="0" max="120" name="idade" required>
+            <label for="caixa" class="informe">Gênero:</label>
+            <div class="caixa">
+                <input type="radio" name="sexo" id="masc" value="masculino">
+                <label for="masculino">Masculino</label>
+            </div>
+            <div class="caixa">
+                <input type="radio" name="sexo" id="fem" value="feminino">
+                <label for="feminino">Feminino</label>
+            </div>
+        </div>
+        <div id="right">
+            <input type="submit" value="Verificar" id="verificar">
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div id="resultado" class="container">
+        <h1>Resultado</h1>
+        <img width="300px" alt="Foto da Pessoa" id="imagem">
+    </div>
+    <script src="js/interativity.js"></script>
+</body>
+</html>

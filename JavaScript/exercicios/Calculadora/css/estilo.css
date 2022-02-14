@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;   
+}
+
+body{
+    background-color: rgb(42, 164, 245);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#container{
+    background-color: rgba(255, 255, 255, 0.445);
+    width: 500px;
+    margin: 60px auto;
+    padding: 15px;
+    font-size: 17pt;
+    border-radius: 20px;
+}
+
+#container h1{
+    font-size: 30pt;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#container label{
+    /* border: 1px solid red; */
+    display: block;
+    margin: 10px 15px;
+}
+
+#container label input{
+    font-size: 17pt;
+    width: 100%;
+    text-indent: 5px;
+}
+
+#botoes{
+    text-align: center;
+    margin: 30px 0;
+}
+
+#botoes input{
+    width: 100px;
+    height: 50px;
+    font-size: 17pt;
+}

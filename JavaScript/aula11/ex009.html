@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            padding: 50px;
+            font-size: 20pt;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background: rgb(50, 115, 189);
+        }
+        .container{
+            width: 500px;
+            margin: 0 auto 50px auto;
+            background: rgba(204, 199, 199, 0.534);
+            border-radius: 20px;
+            padding: 15px;            
+        }
+        .container>h1{
+            font-size: 1.5em;
+            text-align: center;
+            margin: 25px 0;
+        }
+        .container input{
+            width: 300px;
+            font-size: 1em;
+            margin: 10px 5px 10px 50px;
+            text-align: right;
+        }
+        .container input[type="button"]{
+            text-align: center;
+            width: 200px;
+            margin: 10px 145px;
+            background-color: rgb(50, 115, 189);
+            color: white;
+            border: 1px solid rgb(9, 74, 148);
+        }
+        .container p{
+            color: white;
+            text-align: center;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Velocidade</h1>
+        <label for="vel">Informe a velocidade:</label>
+        <input type="text" name="vel" id="txtvel" value="0" required><span>Km/h</span>
+        <input type="button" value="Verificar">
+    </div>
+    <div class="container">
+        <h1>Resultado:</h2>
+        <p>Resultado Aqui!</p>
+    </div>
+
+    <script>
+        var bntVerificar = window.document.querySelector('.container input[type="button"]')
+        bntVerificar.addEventListener('click', verificar)
+        var txtVel = window.document.querySelector('input#txtvel')
+        var lblRes = window.document.querySelector('.container p')
+        var containerRes = window.document.getElementsByClassName('container')[1]
+        containerRes.style.display = 'none'
+        function verificar(){
+            containerRes.style.display = 'block'
+            if(typeof Number(txtVel.value) == "number" && Number(txtVel.value) >= 0){
+                if(txtVel.value > 80){
+                    lblRes.innerHTML = '<p>O limite de velocidade é 80Km/h</p>' 
+                    + `<p>Sua velocidade foi de ${txtVel.value}Km/h</p>`
+                    + '<p>Você está sendo <strong>MULTADO</strong></p>'
+                } else {
+                    lblRes.innerHTML = '<p>O limite de velocidade é 80Km/h</p>' 
+                    + `<p>Sua velocidade foi de ${txtVel.value}Km/h</p>`
+                    + '<p>Parabéns, continue respeitando a lei!!</p>'
+                }
+            } else {
+                lblRes.innerHTML = 'Por favor! Digite uma velocidade possível!'
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Calculadora</h1>
+        <label for="num1">Informe um número:
+            <input type="number" name="num1">
+        </label>
+        <label for="num2">Informe outro número:
+            <input type="number" name="num2">
+        </label>
+        <div id="botoes">
+            <input type="button" value="+" onclick="somar()">
+            <input type="button" value="-" onclick="subtrair()">
+            <input type="button" value="x" onclick="multiplicar()">
+            <input type="button" value="/" onclick="dividir()">
+        </div>
+        <label for="resultado">Resposta:
+            <input type="text" name="resultado" disabled>
+        </label>
+    </div>
+
+    <script src="js/interacao.js"></script>
+</body>
+</html>

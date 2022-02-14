@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background: linear-gradient(to right, rgb(170, 7, 107), rgb(97, 4, 95));
+}
+
+#container{
+    background: rgba(255, 255, 255, 0.479);
+    border-radius: 20px;
+    width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+#container h1{
+    margin-bottom: 20px;
+    color: rgb(97, 4, 95);
+    text-align: center;
+}
+
+form{
+    margin: 10px 30px;
+}
+
+#container label{
+    display: block;
+}
+
+#container input{
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    text-indent: 3px;
+}
+
+#container input[type="button"]{
+    display: block;
+    width: 100px;
+    height: 40px;
+}
+
+#resultado{
+    display: none;
+    border: 1px solid rgb(97, 4, 95);
+    border-radius: 20px;
+    padding: 15px;
+    margin: 10px 30px;
+}
+
+#resultado h2{
+    color: rgb(97, 4, 95);
+}
+
+#resultado span{
+    display: block;
+    margin: 15px 0px;
+}
+
+#link a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.3em;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: rgb(110, 3, 110);
+    font-weight: bolder;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    color: rgb(232, 118, 247);
+}
+
+#link a:hover{
+    background: rgb(232, 118, 247);
+    color: rgb(110, 3, 110);
+}

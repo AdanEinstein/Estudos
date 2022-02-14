@@ -1,0 +1,15 @@
+#resultado h2{
+    float: left;
+    line-height: 250px;
+    font-size: xx-large;
+}
+
+#resultado select{
+    float: right;
+    font-size: 1.1em;
+    margin-right: 30px;
+    background: rgba(255, 255, 255, 0.356);
+    border-radius: 10px;
+    text-indent: 5px;
+    
+}
