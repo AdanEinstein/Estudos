@@ -24,3 +24,5 @@ const Calculadora = {
         console.log(this._resultado)
     }
 }
+
+// module.exports = Calculadora

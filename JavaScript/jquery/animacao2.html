@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Animação #02</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+    <script src='js/jquery.js'></script>
+    <style>
+        body {
+            position: relative;
+            background-color: #999;
+            color: #000;
+        }
+
+        div {
+            position: absolute;
+            display: inline;
+            border: solid 10px #000;
+            padding: 50px;
+            font-size: 3em;
+            background-color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+    <div>Animar!</div>
+
+    <script>
+        function alterarLargura(valor, duracao/* , callback */){
+            return new Promise(resolve => {
+                $('div').animate({ width: `+=${valor}`}, duracao, resolve)
+            })
+        }
+
+        function moverDiagonal(valor, duracao/* , callback */){
+            return new Promise(resolve => {
+                $('div').animate({ top: `+=${valor}`, left: `+=${valor}`}, duracao, resolve)
+            })
+        }
+
+        function girar(valor, duracao/* , callback */){
+            return new Promise(resolve => {
+                $('div').animate({ transform: `+=${valor}`}, {
+                    step(valor){
+                        $(this).css('transform', `rotate(${valor}deg)`)
+                    },
+                    duration: duracao
+                }, 'linear', resolve)
+            })
+        }
+
+        alterarLargura(300, 400)
+            .then(alterarLargura(-300, 400))
+            .then(moverDiagonal(300, 500))
+            .then(girar(72000, 10000))
+    </script>
+</body>
