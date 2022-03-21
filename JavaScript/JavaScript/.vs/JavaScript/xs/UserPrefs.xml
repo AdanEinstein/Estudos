@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{8E520350-40DE-4F04-A3A1-3DBEE54FA0D3}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="JavaScript/exercicios-web/bootstrap/projeto-galeria/src/index.html">
+    <Files>
+      <File FileName="JavaScript/exercicios-web/bootstrap/projeto-galeria/src/index.html" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="JavaScript" expanded="True">
+            <Node name="JavaScript" expanded="True">
+              <Node name="exercicios-web" expanded="True">
+                <Node name="bootstrap" expanded="True">
+                  <Node name="projeto-galeria" expanded="True">
+                    <Node name="src" expanded="True">
+                      <Node name="index.html" selected="True" />
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.JavaScript FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

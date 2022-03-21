@@ -1,25 +1,24 @@
 import $ from 'jquery'
 
-const loadHtmlSuccessCallbacks = []
+const loadHtmlSucessCallbacks = []
 
-export function onLoadHtmlSuccess(callback) {
-    if(!loadHtmlSuccessCallbacks.includes(callback)) {
-        loadHtmlSuccessCallbacks.push(callback)
+export function onLoadHtmlSucess(callback){
+    if(!loadHtmlSucessCallbacks.includes(callback)){
+        loadHtmlSucessCallbacks.push(callback)
     }
 }
 
-function loadIncludes(parent) {
+function loadIncludes(parent){
     if(!parent) parent = 'body'
-    $(parent).find('[wm-include]').each(function(i, e) {
+    $(parent).find('[wm-include]').each(function(i, e){
         const url = $(e).attr('wm-include')
         $.ajax({
             url,
-            success(data) {
+            success(data){
                 $(e).html(data)
                 $(e).removeAttr('wm-include')
 
-                loadHtmlSuccessCallbacks.forEach(
-                    callback => callback(data))
+                loadHtmlSucessCallbacks.forEach(callback => callback(data))
                 loadIncludes(e)
             }
         })
