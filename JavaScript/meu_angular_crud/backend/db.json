@@ -1,0 +1,29 @@
+{
+  "products": [
+    {
+      "id": 2,
+      "name": "Notebook Mac Pro",
+      "price": 12055.32
+    },
+    {
+      "id": 3,
+      "name": "Sansung S20+",
+      "price": 5000.56
+    },
+    {
+      "name": "Xiaomi Mi 8 Lite 128GB / 6GB RAM",
+      "price": "1655.45",
+      "id": 4
+    },
+    {
+      "name": "AirDots RedMi",
+      "price": "120.99",
+      "id": 5
+    },
+    {
+      "name": "Lápis Preto",
+      "price": "1.55",
+      "id": 6
+    }
+  ]
+}
